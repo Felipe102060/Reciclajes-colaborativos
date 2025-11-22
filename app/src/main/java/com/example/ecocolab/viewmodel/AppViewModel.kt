@@ -38,7 +38,7 @@ class AppViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     // ---------------------------------------------------------
-    // REGISTRAR USUARIO
+    // REGISTRAR USUARIO (PERSISTENTE)
     // ---------------------------------------------------------
     fun registrarUsuario(usuario: User) {
         viewModelScope.launch {
@@ -54,7 +54,7 @@ class AppViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     // ---------------------------------------------------------
-    // LOGIN
+    // LOGIN (PERSISTENTE)
     // ---------------------------------------------------------
     fun login(email: String, onResult: (Boolean) -> Unit) {
         viewModelScope.launch {
